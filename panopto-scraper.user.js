@@ -19,6 +19,11 @@
             return;
         }
 
+        // Ensure document.body is available
+        if (!document.body) {
+            return;
+        }
+
         const button = document.createElement('button');
         button.id = 'panopto-scraper-btn';
         button.textContent = 'Download All Videos';
